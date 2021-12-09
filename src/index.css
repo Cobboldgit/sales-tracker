@@ -1,13 +1,76 @@
 body {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container-fluid {
+  padding-left: 0;
+}
+
+.sidebar_container {
+  background-color: rgb(55, 137, 209);
+  height: 100vh;
+  padding-top: 2rem;
+  box-shadow: 2px 2px 7px rgb(88, 88, 88);
+}
+
+.sidebar_container .links {
+  margin-top: 3rem;
+}
+
+.sidebar_container ul {
+  padding: 0;
+}
+
+.sidebar_container ul a li {
+  list-style: none;
+  padding: 15px 0px;
+}
+
+.sidebar_container ul a {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+}
+
+.sidebar_container ul a li:hover {
+  background-color: #000;
+  box-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+
+.profile_pic {
+  overflow: hidden;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+}
+
+.profile_text{
+  text-align: center;
+  color: #fff;
+  font-weight: 1000;
+  font-size: 25px;
+}
+
+.sidebar_icon {
+  font-size: 40px;
+}
+
+/* @media screen and (max-width: ) {
+  
+} */
+
+@media screen and (max-width: 600px) {
+
+  .sidebar_container {
+    height:auto;
+    padding-bottom: 2rem;
+    box-shadow: none;
+  }
+
+  .sidebar_container ul a li {
+    padding: 10px 0px;
+  }
+
 }
